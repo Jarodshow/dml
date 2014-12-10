@@ -61,7 +61,7 @@ end
 local dir = "dml/elements/";
 include("dml/meta.lua");
 
-for _,f in pairs(file.FindInLua( dir .. "*.lua")) do
+for _,f in pairs(file.Find( dir.."*", "LUA")) do
 	include( dir .. f );
 end
 
